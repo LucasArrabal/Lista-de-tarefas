@@ -40,7 +40,7 @@ body{
 
 .new-task-container input:focus{
     outline: none;
-    border-color: #861d19
+    border-color: #8bbe8b
 }
 
 .new-task-button{
@@ -65,4 +65,28 @@ body{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     width: 100%;
 
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.task-item i{
+    background-color: #861d19;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/*Utilties */
+.error{
+    border:  2px solid red !important;
+}
+
+.error::placeholder{
+    color:  red;
 }
